@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 700px;
+    height: 700px;
+}
+
+.square {
+    animation-name: square;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes square {
+    0% {
+        transform: translate(0px , 0px);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(0px , 250px);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(250px , 250px);
+        background-color: green;
+    }
+
+    75% {
+        transform: translate(250px , 0px);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translate(0px , 0px);
+        background-color: red;
+    }
+}
